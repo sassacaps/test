@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double a(0), b(0);
+  cout << "Calcul" << endl;
+  cout << "Inserer a" << endl;
+  cin >> a;
+  cout << "Inserer b" << endl;
+  cin >> b;
+  double result(a + b);
+  cout << result << endl;
+
+  return 0;
+}
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout << "Combien vaut pi ?" << endl;
+    double piUtilisateur(-1.); //On cr?e une case m?moire pour stocker unnombre r?el
+    cin >> piUtilisateur; //Et on remplit cette case avec ce qu'?critl'utilisateur
+
+    cin.ignore(); //toujours placer l'instruction (cin.ignore)apr?s la ligne (cin>>a)
+
+    cout << "Quel est votre nom ?" << endl;
+    string nomUtilisateur("Sans nom"); //On cr?e une case m?moire pour contenir une chaine de caract?res
+    getline(cin, nomUtilisateur); //On remplit cette case avec toute la ligne que l'utilisateur a ?crit
+
+    cout << "Vous vous appelez " << nomUtilisateur << " et vous pensez que pivaut " << piUtilisateur << "." << endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << " Quel age avez-vous? " << endl;
+    int ageUtilisateur(0);
+    cin >>ageUtilisateur;
+    cout <<" Vous avez " << ageUtilisateur << " ans! " << endl;
+    return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void direBonjour()
+{
+
+    string direBonjour;
+
+
+
+    cout direBonjour << "Bonjour !" << endl;
+
+
+}
+
+
